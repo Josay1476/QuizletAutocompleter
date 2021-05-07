@@ -22,6 +22,9 @@ To use, simply click and drag the link below titled "Quizlet Autocomplete" into 
 <br>
     <a href="javascript:(function()%7Bfunction%20clickApp()%20%7B%0A%20%20%20%20var%20items%20%3D%20document.getElementsByClassName('UILink')%3B%0A%20%20%20%20for%20(var%20i%20%3D%200%3B%20i%20%3C%20items.length%3B%20i%2B%2B)%20%7B%20%20%20%20%20%20%0A%20%20%20%20%20%20items%5Bi%5D.click()%3B%0A%20%20%20%20%7D%0A%20%20%20%20if%20(%0A%20%20%20%20(%0A%20%20%20%20%20%20document.documentElement.textContent%20%7C%7C%20document.documentElement.innerText%0A%20%20%20%20).indexOf('Press%20any%20key%20to%20continue')%20%3E%20-1%0A%20%20)%20%7B%0A%20%20%20%20%20%20%20%20var%20itemTwo%20%3D%20document.getElementsByClassName('UIButton')%3B%0A%20%20%20%20%20%20for%20(var%20i%20%3D%200%3B%20i%20%3C%20itemTwo.length%3B%20i%2B%2B)%20%7B%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20itemTwo%5Bi%5D.click()%3B%0A%20%20%7D%0A%20%20%20%20%7D%0A%7D%0A%20%20%20%20%20var%20intervalId%20%3D%20window.setInterval(function()%7B%0A%20%20%20%20%20%20clickApp()%0A%2F%2F%20CHANGE%2010%20TO%20YOUR%20DESIRED%20AMOUNT%20OF%20TIME%20IN%20MILLISECONDS.%201000%20is%201%20second.%0A%20%20%20%20%7D%2C%2010)%3B%7D)()%3B">Quizlet Completer</a>
   </center>
+ <br>
+ <br>
+ To run the bookmarklet, click it while on the Learn part of a Quizlet.
     <script src="script.js"></script>
   </body>
 </html>
